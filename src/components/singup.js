@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import signup from '../css/signup.css';
 import frontpage from '../css/frontpage.css'
-import { Link } from 'react-router-dom';
+// import { BrowserRouter, Link } from 'react-router-dom';
+import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
 // import Frame1 from '../images/Frame1.png'
 import Union from '../images/Union.svg'
 import google from '../images/google.svg'

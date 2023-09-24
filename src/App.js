@@ -1,17 +1,18 @@
 
 // import './App.css';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Frontpage from './components/frontpage';
 import Signup from './components/singup';
 import Profile from './components/profile';
 
 function App() {
   return (
-    <div className="App">
-      <Profile />
+    <>
+      {/* <Profile /> */}
    {/* <Frontpage /> */}
    {/* <Signup /> */}
-   {/* <Router>
+   {/* <BrowserRouter>
+   
              
       
        
@@ -25,9 +26,26 @@ function App() {
           </Routes>
           
           
+ 
+    </BrowserRouter> */}
+    <Router>
+             
+      
+       
+             <Routes>
+             
+             <Route path='/frontpage' Component={Frontpage}  />
+            <Route path='/signup' Component={Signup} />
+            
+           
+   
+    
+          </Routes>
+          
+          
     </Router>
-    */}
-    </div>
+   
+    </>
   );
 }
 
