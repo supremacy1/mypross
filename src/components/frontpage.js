@@ -28,7 +28,7 @@ const Frontpage = () => {
                         <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
                 <div className="fsubcontainer2">
-                    <h4>Already have an account? <Link to ='/signup'>Signup</Link></h4><br></br>
+                    <h4>Already have an account? <Link style={{textDecoration: 'none'}}  to ='/signup'>Signup</Link></h4><br></br>
                     <h2>Join Us!</h2>
                     <p>To begin this journey, tell us what type of <br></br>account you’d be opening.</p>
                     <div className="index">

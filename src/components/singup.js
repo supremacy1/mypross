@@ -4,7 +4,10 @@ import frontpage from '../css/frontpage.css'
 import { Link } from 'react-router-dom';
 // import Frame1 from '../images/Frame1.png'
 import Union from '../images/Union.svg'
+import google from '../images/google.svg'
 import Vector1 from '../images/Vector1.svg'
+import arrowback1 from '../images/arrowback1.svg'
+
 // import polygon from '../images/Polygon 1.svg'
 // import poly from '../images/Poly.svg'
 // import user from '../images/user.png'
@@ -36,7 +39,10 @@ const Signup = () => {
                         <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
                     <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
-                <Link to='/frontpage'>Back</Link>
+                <div className="pat">
+                <img src={arrowback1}className="arrow" alt="arrow"></img>
+                <Link style={{textDecoration: 'none'}} to='/frontpage'>Back</Link>
+                </div>
                 {/* <h3 className="h">Back</h3> */}
                 <div className="signupcontainer2">
                     <div className="head">
@@ -85,7 +91,7 @@ const Signup = () => {
                         </label><br></br>
                         <button type='submit'>Register Account</button><br></br>
                         <span>or</span><br></br>
-                        <button type='button' className="google">Register with Google</button><br></br>
+                        <button type='button' className="google"><img src={google} className="goole" alt="go"></img>Register with Google</button><br></br>
                     </form>
                 </div>
 

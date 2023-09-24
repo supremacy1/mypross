@@ -3,13 +3,15 @@
 import { BrowserRouter as Router, Switch, Route, Routes } from 'react-router-dom';
 import Frontpage from './components/frontpage';
 import Signup from './components/singup';
+import Profile from './components/profile';
 
 function App() {
   return (
     <div className="App">
+      <Profile />
    {/* <Frontpage /> */}
    {/* <Signup /> */}
-   <Router>
+   {/* <Router>
              
       
        
@@ -24,7 +26,7 @@ function App() {
           
           
     </Router>
-   
+    */}
     </div>
   );
 }
