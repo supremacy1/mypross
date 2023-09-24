@@ -28,7 +28,8 @@ function App() {
           
  
     </BrowserRouter> */}
-    <Router>
+    <BrowserRouter>
+   
              
       
        
@@ -43,8 +44,8 @@ function App() {
           </Routes>
           
           
-    </Router>
-   
+    
+   </BrowserRouter>
     </>
   );
 }
