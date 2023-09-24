@@ -9,15 +9,15 @@ function App() {
   return (
     <>
       {/* <Profile /> */}
-   {/* <Frontpage /> */}
-   {/* <Signup /> */}
-   {/* <BrowserRouter>
+   {/* <Frontpage />
+   <Signup /> */}
+   <BrowserRouter>
    
              
       
        
              <Routes>
-             
+             <Route path='/' Component={Frontpage}  />
              <Route path='/frontpage' Component={Frontpage}  />
    
             <Route path='/signup' Component={Signup} />
@@ -27,8 +27,8 @@ function App() {
           
           
  
-    </BrowserRouter> */}
-    <BrowserRouter>
+    </BrowserRouter>
+    {/* <BrowserRouter>
    
              
       
@@ -45,7 +45,7 @@ function App() {
           
           
     
-   </BrowserRouter>
+   </BrowserRouter> */}
     </>
   );
 }

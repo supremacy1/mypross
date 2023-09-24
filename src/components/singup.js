@@ -42,7 +42,8 @@ const Signup = () => {
                 </div>
                 <div className="pat">
                 <img src={arrowback1}className="arrow" alt="arrow"></img>
-                <Link style={{textDecoration: 'none'}} to='/frontpage'>Back</Link>
+                <Link style={{textDecoration: 'none'}} className="bat" to='/frontpage'>Back</Link>
+                {/* <a href="frontpage">Back</a> */}
                 </div>
                 {/* <h3 className="h">Back</h3> */}
                 <div className="signupcontainer2">
