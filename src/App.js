@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-rou
 import Frontpage from './components/frontpage';
 import Signup from './components/singup';
 import Profile from './components/profile';
+import Bank from './components/bank';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       {/* <Profile /> */}
    {/* <Frontpage />
    <Signup /> */}
+   {/* <Bank /> */}
    <BrowserRouter>
    
              
@@ -21,6 +23,8 @@ function App() {
              <Route path='/frontpage' Component={Frontpage}  />
    
             <Route path='/signup' Component={Signup} />
+            <Route path='/profile' Component={Profile} />
+            <Route path='/bank' Component={Bank} />
    
     
           </Routes>

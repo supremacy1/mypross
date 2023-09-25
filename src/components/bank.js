@@ -1,11 +1,10 @@
 import React, { useState } from "react";
-import signup from '../css/signup.css';
-import frontpage from '../css/frontpage.css'
+import bank from '../css/bank.css'
 // import { BrowserRouter, Link } from 'react-router-dom';
 import {BrowserRouter, Route, Link, Routes} from 'react-router-dom';
 // import Frame1 from '../images/Frame1.png'
 import Union from '../images/Union.svg'
-import google from '../images/google.svg'
+import lock from '../images/lock.svg'
 import Vector1 from '../images/Vector1.svg'
 import arrowback1 from '../images/arrowback1.svg'
 
@@ -14,13 +13,10 @@ import arrowback1 from '../images/arrowback1.svg'
 // import user from '../images/user.png'
 // import briefcase from '../images/briefcase.svg'
 
-const Signup = () => {
+const Bank = () => {
 
-    const [fullname, setFullname] = useState();
-    const [email, setEmail] = useState();
-    const [password, setPassword] = useState();
-    const [checkbox, setCheckbox] = useState();
-
+    const [bank, setBank] = useState();
+ 
     const handleSubmit = (event) => {
         event.preventDefault();
     }
@@ -42,7 +38,7 @@ const Signup = () => {
                 </div>
                 <div className="pat">
                 <img src={arrowback1}className="arrow" alt="arrow"></img>
-                <Link style={{textDecoration: 'none'}} className="bat" to='/frontpage'>Back</Link>
+                <Link style={{textDecoration: 'none'}} className="bat" to='/profile'>Back</Link>
                 {/* <a href="frontpage">Back</a> */}
                 </div>
                 {/* <h3 className="h">Back</h3> */}
@@ -50,51 +46,24 @@ const Signup = () => {
                     <div className="head">
                         <h6 className="p2">STEP 01/03</h6><h4 className="p">Personal info</h4>
                     </div>
-                    <h2>Register Individual Account!</h2>
+                    <h2>Complete Your Profile!</h2>
                     <p>For the purpose of industery requalation, your<br></br>detail are requier</p>
                     <form className="registration-form" onSubmit={handleSubmit}>
                         <label>
-                            Your fullname*
+                            Bank verification number [BVN]
                         </label><br></br>
                         <input
                             type="text"
                             // name="username"
                             // value={values.text}
-                            value={fullname}
-                            onChange={e => setFullname(e.target.value)}
+                            value={bank}
+                            onChange={e => setBank(e.target.value)}
                             required
                         /><br></br>
-                        <label>
-                            Email address*
-                        </label><br></br>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={e => setEmail(e.target.value)}
-                            required
-                        /><br></br>
-                        <label>
-                            Create password*
-                        </label><br></br>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={e => setPassword(e.target.value)}
-                            required
-                        /><br></br>
-                        <input
-                            type="checkbox"
-                            value={checkbox}
-                            onChange={e => setCheckbox(e.target.value)}
-                            required
-                        />
-                        <label>
-                            I agree to terms and condition
-                        </label><br></br>
-                        <Link to='/profile'><button type='submit'>Register Account</button><br></br></Link>
-                        
-                        <span>or</span><br></br>
-                        <button type='button' className="google"><img src={google} className="goole" alt="go"></img>Register with Google</button><br></br>
+                      
+                      <br></br>
+                        <button type='submit'>Save & Countinue</button><br></br>
+                        <h2 className="h"><img src={lock} className="goole" alt="go"></img>Your Info is safely secured</h2>
                     </form>
                 </div>
 
@@ -104,4 +73,4 @@ const Signup = () => {
         </>
     )
 }
-export default Signup;
+export default Bank;

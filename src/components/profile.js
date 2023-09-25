@@ -11,7 +11,7 @@ const Profile = () => {
     const [phone, setPhone] = useState();
     const [address, setAddress] = useState();
     const [country, setCountry] = useState();
-
+const [phn, setPhn] = useState();
     const handleSubmit = (event) => {
         event.preventDefault();
     }
@@ -33,7 +33,7 @@ const Profile = () => {
                 </div>
                 <div className="pat">
                 <img src={arrowback1}className="arrow" alt="arrow"></img>
-                <h4>Back</h4>
+                <Link style={{textDecoration: 'none'}} className="bat" to='/signup'>Back</Link>
                 </div>
                 <div className='pro2'>
 
@@ -47,9 +47,22 @@ const Profile = () => {
                     
                 </div>
                 <form className="registration-form" onSubmit={handleSubmit}>
+                   {/* <input 
+                   type='text'
+                   defaultCoutry = 'ni'
+                   value={phn}
+                   onChange={e => setPhn(e.target.value)}
+                   /> */}
                     <label>
                         Phone Number*
                     </label><br></br>
+                    {/* <select className='select'>
+        <option value="">-- Select --</option>
+         <option value="option1">Mtn</option>
+         <option value="option2">Airtel</option>
+         <option value="option3">9mobile</option>
+        <option value="option4">Glo</option>
+        </select> */}
                     <input
                         type="text"
                         // name="username"
@@ -58,6 +71,7 @@ const Profile = () => {
                         onChange={e => setPhone(e.target.value)}
                         required
                     /><br></br>
+                    
                     <label>
                         Your address*
                     </label><br></br>
@@ -77,7 +91,7 @@ const Profile = () => {
                         required
                     /><br></br>
                     <br></br>
-                    <button type='submit'>Save & Countinue</button><br></br>
+                    <Link to='/bank'><button type='submit'>Save & Countinue</button><br></br></Link>
 
                 </form>
                 </div>
