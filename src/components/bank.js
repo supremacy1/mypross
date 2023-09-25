@@ -47,7 +47,7 @@ const Bank = () => {
                         <h6 className="p2">STEP 01/03</h6><h4 className="p">Personal info</h4>
                     </div>
                     <h2>Complete Your Profile!</h2>
-                    <p>For the purpose of industery requalation, your<br></br>detail are requier</p>
+                    <p className="head">For the purpose of industery requalation, your<br></br>detail are required.</p>
                     <form className="registration-form" onSubmit={handleSubmit}>
                         <label>
                             Bank verification number [BVN]

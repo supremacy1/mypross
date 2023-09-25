@@ -39,8 +39,9 @@ const Frontpage = () => {
                         {/* <img src={user} className="logo1" alt="logo1"></img>  */}
                         </div>
                         <div className="text1">
-                        <h3>Individual</h3>
+                        <Link style={{textDecoration: 'none'}} to='/signup'><h3>Individual</h3>
                         <h5> Personal account to manage all you <br></br>activities.</h5>
+                        </Link>
                         </div>
                     </div>
                     <div className="index1">
@@ -49,8 +50,9 @@ const Frontpage = () => {
                         {/* <img src={briefcase} className="in1" alt="logo"></img> */}
                         </div>
                         <div className="text">
-                        <h3>Business</h3>
+                        <Link style={{textDecoration: 'none'}} to='/signup'><h3>Business</h3>
                         <p>Own or belong to a company, this is for you.</p>
+                        </Link>
                         </div>
 
                     </div>

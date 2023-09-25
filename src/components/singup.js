@@ -50,8 +50,8 @@ const Signup = () => {
                     <div className="head">
                         <h6 className="p2">STEP 01/03</h6><h4 className="p">Personal info</h4>
                     </div>
-                    <h2>Register Individual Account!</h2>
-                    <p>For the purpose of industery requalation, your<br></br>detail are requier</p>
+                    <h2 className="he">Register Individual Account!</h2>
+                    <p className="head">For the purpose of industery requalation, your<br></br>detail are requier</p>
                     <form className="registration-form" onSubmit={handleSubmit}>
                         <label>
                             Your fullname*
@@ -88,6 +88,7 @@ const Signup = () => {
                             onChange={e => setCheckbox(e.target.value)}
                             required
                         />
+                     
                         <label>
                             I agree to terms and condition
                         </label><br></br>

@@ -44,6 +44,10 @@ flex: 1;
 .arrow{
     margin-top: 52%;
 }
+.arrw{
+    height: 3vmin;
+    margin-top: 50%;
+}
 /* .hot1 {
     position: relative;
     display: flex;

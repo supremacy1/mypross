@@ -20,6 +20,14 @@
  left: 2%;
  margin: 7%;
 }
+.he{
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
 .p{
     /* position: absolute;
     flex-direction: column;
@@ -38,7 +46,12 @@ left: 0%;
 }
 
 .signupcontainer2{
-   
+    
+    justify-self: auto;
+     /* width: 1440px; */
+ height: 810px;
+ /* flex-wrap: wrap; */
+
    
     margin-top: 2%;
     height: 44px;

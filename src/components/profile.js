@@ -32,15 +32,17 @@ const [phn, setPhn] = useState();
     <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
                 <div className="pat">
-                <img src={arrowback1}className="arrow" alt="arrow"></img>
+                <img src={arrowback1}className="arrw" alt="arrow"></img>
                 <Link style={{textDecoration: 'none'}} className="bat" to='/signup'>Back</Link>
                 </div>
                 <div className='pro2'>
 
                 <div className='header'>
                     <div className='hot1'>
-                    <h5 className='hot2'>Step 02/03</h5>
-                    <h4 className='hot3'>Residence</h4>
+                    <div className="head">
+                        <h6 className="p2">STEP 01/03</h6><h4 className="p">Residence</h4>
+                    </div>
+
                     </div>
                     <h2>Join Us!</h2>
                     <p>To begin this journey, tell us what type of <br></br>account you’d be opening.</p>

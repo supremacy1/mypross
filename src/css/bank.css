@@ -1,6 +1,16 @@
 .h{
     font-size: 12px;
-    color: aquamarine;
+    color: #8692A6;
     align-items: center;
     padding-left: 20%;
+}
+.head{
+    color: #8692A6;
+
+ font-family: Inter;
+ font-size: 18px;
+ font-style: normal;
+ font-weight: 600;
+ line-height: normal;
+ 
 }
