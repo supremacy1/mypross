@@ -1,4 +1,151 @@
-.h{
+.bankcontainer {
+    
+    display: flex;
+   justify-self: auto;
+    /* width: 1440px; */
+height: 810px;
+/* flex-wrap: wrap; */
+flex: 1;
+}
+.banksubcontainer {
+
+    justify-content: space-between;
+    margin-left: 2px;
+    background: linear-gradient(0deg, rgba(21, 101, 216, 0.90) 0%, rgba(21, 101, 216, 0.90) 100%), url('../images/back.jpg'), lightgray 50% / cover no-repeat;
+
+}
+.banksubcontainer p {
+    margin-top: 30%;
+
+    color: #FFF;
+
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 190% */
+
+}
+.banksubcontainer h5 {
+    color: antiquewhite;
+    padding-left: 33px;
+}
+.bankcontainer2{
+    display: flex;
+    flex-direction: column;
+   padding-left: 10%;
+ }
+ .bankrow{
+    position: relative;
+    top: 18%;
+    right: 40px;
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+ }
+ .bpat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ .bant{
+    position: relative;
+    top: 18%;
+    right: 100px;
+    color: #8692A6;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+ .bp2{
+    position: relative;
+    top: -35%;
+    left: 45%;
+    color: #BDBDBD;
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+ }
+ .bap{
+    position: relative;
+    top: -6%;
+    left: 4%;
+    color: #8692A6;
+text-align: right;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+ }
+ .bankcontainer2 h2{
+    color: #000;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+ }
+ .banks{
+    width: 411px;
+    color: #8692A6;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+ }
+ .registration-bank{
+    flex: 1;
+flex-shrink: 0;
+line-height: 37px;
+width: 426px;
+height: 64px;
+flex-shrink: 0;
+
+
+}
+.registration-bank input{
+    width: 426px;
+    height: 34px;
+    flex-shrink: 0;
+    border-radius: 6px;
+border: 1px solid #1565D8;
+background: #FFF;
+box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11);
+
+}
+.registration-bank [type = "submit"]{
+    width: 426px;
+    height: 64px;
+    flex-shrink: 0;
+    border-radius: 6px;
+background: #1565D8;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+}
+.last h2{
+    color: #8692A6;
+text-align: center;
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/* .h{
     font-size: 12px;
     color: #8692A6;
     align-items: center;
@@ -13,4 +160,4 @@
  font-weight: 600;
  line-height: normal;
  
-}
+} */

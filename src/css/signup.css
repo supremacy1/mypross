@@ -1,65 +1,117 @@
-.head{
+.signcontainer {
     display: flex;
-    justify-content: space-evenly;
-    justify-content: space-around;
+   justify-self: auto;
+    /* width: 1440px; */
+height: 810px;
+/* flex-wrap: wrap; */
+flex: 1;
 }
-.head {
-    display: flex;
-    flex-direction: column;
+.subcontainer {
+
+    justify-content: space-between;
+    margin-left: 2px;
+    background: linear-gradient(0deg, rgba(21, 101, 216, 0.90) 0%, rgba(21, 101, 216, 0.90) 100%), url('../images/back.jpg'), lightgray 50% / cover no-repeat;
 
 }
-.head .p2{
-    position: relative;
-    color: #8692A6;
- text-align: right;
- font-family: Inter;
- font-size: 10px;
- font-style: normal;
- font-weight: 600;
- line-height: normal;
- left: 2%;
- margin: 7%;
-}
-.he{
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
+.subcontainer p {
+    margin-top: 30%;
+
+    color: #FFF;
+
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 190% */
+
 }
-.p{
-    /* position: absolute;
-    flex-direction: column;
-    top: 7%;
-   left: 50%; */
-   text-align: right;
-   position: relative;
-   color: #8692A6;
+.subcontainer h5 {
+    color: antiquewhite;
+    padding-left: 33px;
+}
+.let {
+    position: absolute;
+}
+.vect{
+    position: relative;
+    padding-left: 50%;
+}
+.signupcontainer2{
+   display: flex;
+   flex-direction: column;
+  padding-left: 10%;
+}
+.plate{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pl{
+    position: relative;
+    color: #1565D8;
+    right: -46%;
+    top: -26%;
+    color: #BDBDBD;
+text-align: right;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.pl1{
+position: relative;
+    color: #8692A6;
+text-align: right;
 font-family: Inter;
 font-size: 16px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-margin-top: -8%;
-left: 0%;
+right: -12%;
 }
-
-.signupcontainer2{
-    
-    justify-self: auto;
-     /* width: 1440px; */
- height: 810px;
- /* flex-wrap: wrap; */
-
-   
-    margin-top: 2%;
-    height: 44px;
+.pp{
+    position: relative;
+    top: 33%;
+    right: 15%;
+    color: #8692A6;
+font-family: Inter;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.dot{
+    color: #000;
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.dot1{
+    width: 411px;
+    color: #8692A6;
+font-family: Inter;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 155.556% */
+}
+.aro{
+    width: 20px;
+height: 20px;
+flex-shrink: 0;
+position: relative;
+top: 30%;
 }
 .registration-form{
     flex: 1;
 flex-shrink: 0;
 line-height: 37px;
+width: 426px;
+height: 64px;
+flex-shrink: 0;
 
 
 }

@@ -31,27 +31,25 @@ const Signup = () => {
 
     return (
         <>
-            <div className="frontcontainer">
-                <div className="fsubcontainer">
-                    <img src={Union} className="l1" alt="union"></img><h5>Osis</h5>
+            <div className="signcontainer">
+                <div className="subcontainer">
+                    <img src={Union} className="let" alt="union"></img><h5>Osis</h5>
 
                     <p>“ <br></br>The passage experienced a surge in popularity<br></br>
                         during the 1960s when Letraset used it on their<br></br> dry-transfer sheets, and again during the 90s
                         <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
-                    <img src={Vector1} className="vector1" alt="union"></img>
+                    <img src={Vector1} className="vect" alt="union"></img>
                 </div>
-                <div className="pat">
-                <img src={arrowback1}className="arrow" alt="arrow"></img>
-                <Link style={{textDecoration: 'none'}} className="bat" to='/frontpage'>Back</Link>
-                {/* <a href="frontpage">Back</a> */}
-                </div>
-                {/* <h3 className="h">Back</h3> */}
+                
                 <div className="signupcontainer2">
-                    <div className="head">
-                        <h6 className="p2">STEP 01/03</h6><h4 className="p">Personal info</h4>
+                <div className="plate">
+                <img src={arrowback1}className="aro" alt="arrow"></img>
+
+                <Link style={{textDecoration: 'none'}} className="pp" to='/frontpage'>Back</Link>
+                        <h6 className="pl">STEP 01/03</h6><h4 className="pl1">Personal info</h4>
                     </div>
-                    <h2 className="he">Register Individual Account!</h2>
-                    <p className="head">For the purpose of industery requalation, your<br></br>detail are requier</p>
+                    <h2 className="dot">Register Individual Account!</h2>
+                    <p className="dot1">For the purpose of industery requalation, your<br></br>detail are requier</p>
                     <form className="registration-form" onSubmit={handleSubmit}>
                         <label>
                             Your fullname*
@@ -97,9 +95,9 @@ const Signup = () => {
                         <span>or</span><br></br>
                         <button type='button' className="google"><img src={google} className="goole" alt="go"></img>Register with Google</button><br></br>
                     </form>
-                </div>
+                </div> 
 
-            </div>
+             </div>
 
 
         </>

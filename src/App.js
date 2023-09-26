@@ -5,13 +5,15 @@ import Frontpage from './components/frontpage';
 import Signup from './components/singup';
 import Profile from './components/profile';
 import Bank from './components/bank';
+import MainBar from './components/mainbar';
 
 function App() {
   return (
     <>
+    {/* <MainBar /> */}
       {/* <Profile /> */}
-   {/* <Frontpage />
-   <Signup /> */}
+    {/* <Frontpage /> */}
+   {/* <Signup /> */}
    {/* <Bank /> */}
    <BrowserRouter>
    

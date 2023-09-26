@@ -31,40 +31,21 @@ const [phn, setPhn] = useState();
     <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
     <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
-                <div className="pat">
-                <img src={arrowback1}className="arrw" alt="arrow"></img>
-                <Link style={{textDecoration: 'none'}} className="bat" to='/signup'>Back</Link>
+                <div className="profilecontainer2">
+                    <div className='proplate'>
+                <img src={arrowback1}className="paro" alt="arrow"></img>
+                <Link style={{textDecoration: 'none'}} className="pback" to='/signup'>Back</Link>
+                <h6 className="pr2">STEP 01/03</h6><h4 className="pr">Residence</h4>
                 </div>
-                <div className='pro2'>
-
-                <div className='header'>
-                    <div className='hot1'>
-                    <div className="head">
-                        <h6 className="p2">STEP 01/03</h6><h4 className="p">Residence</h4>
-                    </div>
-
-                    </div>
-                    <h2>Join Us!</h2>
-                    <p>To begin this journey, tell us what type of <br></br>account you’d be opening.</p>
+                                 
+                    <h2>Complete Your Profile!!</h2>
+                    <p>For the purpose of industry regulation, your details are required.</p>
                     
-                </div>
-                <form className="registration-form" onSubmit={handleSubmit}>
-                   {/* <input 
-                   type='text'
-                   defaultCoutry = 'ni'
-                   value={phn}
-                   onChange={e => setPhn(e.target.value)}
-                   /> */}
+                <form className="registration-pro" onSubmit={handleSubmit}>
+                
                     <label>
                         Phone Number*
                     </label><br></br>
-                    {/* <select className='select'>
-        <option value="">-- Select --</option>
-         <option value="option1">Mtn</option>
-         <option value="option2">Airtel</option>
-         <option value="option3">9mobile</option>
-        <option value="option4">Glo</option>
-        </select> */}
                     <input
                         type="text"
                         // name="username"
@@ -97,7 +78,8 @@ const [phn, setPhn] = useState();
 
                 </form>
                 </div>
-            </div>
+                </div>
+           
         </>
     )
 }
