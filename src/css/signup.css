@@ -150,6 +150,7 @@ line-height: normal;
     top: -55%;
     left: 76%;
     font-size: 15px;
+    cursor: pointer;
 }
 span{
     padding-left: 44%;
