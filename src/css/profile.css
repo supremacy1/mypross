@@ -117,6 +117,8 @@ line-height: 28px; /* 155.556% */
     top: 5%;
     width: 100px;
     right: 90px;
+    background-color:#fbfcfd ;
+    color: #8692A6;
 }
 .sell{
 text-align:center;
