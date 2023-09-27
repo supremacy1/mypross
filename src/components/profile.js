@@ -11,7 +11,13 @@ const Profile = () => {
     const [phone, setPhone] = useState();
     const [address, setAddress] = useState();
     const [country, setCountry] = useState();
-const [phn, setPhn] = useState();
+    const [selectedCountry, setSelectedCountry] = useState(''); 
+// const [phn, setPhn] = useState();
+
+const handleCountryChange = (event) => {
+    setSelectedCountry(event.target.value);
+  };
+
     const handleSubmit = (event) => {
         event.preventDefault();
     }
@@ -45,14 +51,33 @@ const [phn, setPhn] = useState();
                 
                     <label>
                         Phone Number*
-                    </label><br></br>
-                    <input
+                    </label>
+
+                    <select className='select' value={selectedCountry} onChange={handleCountryChange}>
+        <option value="">Select</option>
+        <option value="+1">United States (+1)</option>
+        <option value="+44">United Kingdom (+44)</option>
+        <option value="+91">India (+91)</option>
+        {/* Add more country options as needed */}
+        <input className='sell'
+        type="text"
+        placeholder="Enter phone numbers"
+      />
+      </select>
+      {/* <input
+        type="text"
+        placeholder="Enter phone number"
+      /> */}
+
+                    <input className='sell'
                         type="text"
                         // name="username"
                         // value={values.text}
+                        placeholder='Enter your phone Number'
                         value={phone}
                         onChange={e => setPhone(e.target.value)}
                         required
+                        
                     /><br></br>
                     
                     <label>
@@ -60,6 +85,7 @@ const [phn, setPhn] = useState();
                     </label><br></br>
                     <input
                         type="text"
+                        placeholder='Please Enter adress'
                         value={address}
                         onChange={e => setAddress(e.target.value)}
                         required
@@ -70,6 +96,7 @@ const [phn, setPhn] = useState();
                     <input
                         type="text"
                         value={country}
+                        placeholder='Please Select'
                         onChange={e => setCountry(e.target.value)}
                         required
                     /><br></br>

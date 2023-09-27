@@ -14,6 +14,13 @@ flex: 1;
     background: linear-gradient(0deg, rgba(21, 101, 216, 0.90) 0%, rgba(21, 101, 216, 0.90) 100%), url('../images/back.jpg'), lightgray 50% / cover no-repeat;
 
 }
+.bankuion{
+    position: absolute;
+}
+.bankvector1{
+    position: relative;
+    padding-left: 50%;
+}
 .banksubcontainer p {
     margin-top: 30%;
 

@@ -144,6 +144,13 @@ font-weight: 500;
 line-height: normal;
 
 }
+.hide{
+    color: #8692A6;
+    position: relative;
+    top: -55%;
+    left: 76%;
+    font-size: 15px;
+}
 span{
     padding-left: 44%;
     color: #BABABA;

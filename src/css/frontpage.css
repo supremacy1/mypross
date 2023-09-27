@@ -52,13 +52,15 @@ flex: 1;
 }
 
 .fsubcontainer2 h4 {
-    color: #000;
+    color: #8692A6;
     font-family: Inter;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
    padding-left: 50%;
+  
+  
 }
 
 .fsubcontainer2 p {

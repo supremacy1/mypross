@@ -20,6 +20,13 @@ const Signup = () => {
     const [email, setEmail] = useState();
     const [password, setPassword] = useState();
     const [checkbox, setCheckbox] = useState();
+    const [showPassword, setShowPasword] = useState(false)
+    const handlePasswordChange = (event) =>{
+        setPassword(event.target.value);
+    };
+    const handleTogglePassword = () => {
+        setShowPasword(!showPassword);
+    }
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -58,6 +65,7 @@ const Signup = () => {
                             type="text"
                             // name="username"
                             // value={values.text}
+                            placeholder="supremacy"
                             value={fullname}
                             onChange={e => setFullname(e.target.value)}
                             required
@@ -67,6 +75,7 @@ const Signup = () => {
                         </label><br></br>
                         <input
                             type="email"
+                            placeholder="Enter your email"
                             value={email}
                             onChange={e => setEmail(e.target.value)}
                             required
@@ -75,11 +84,13 @@ const Signup = () => {
                             Create password*
                         </label><br></br>
                         <input
-                            type="password"
+                            type= {showPassword ? 'text' : "password"}
                             value={password}
-                            onChange={e => setPassword(e.target.value)}
+                            placeholder="Create a password"
+                            // onChange={e => setPassword(e.target.value)}
+                            onChange={handlePasswordChange}
                             required
-                        /><br></br>
+                        />
                         <input
                             type="checkbox"
                             value={checkbox}
@@ -94,6 +105,7 @@ const Signup = () => {
                         
                         <span>or</span><br></br>
                         <button type='button' className="google"><img src={google} className="goole" alt="go"></img>Register with Google</button><br></br>
+                        <h2 className="hide" onClick={handleTogglePassword}>{showPassword ? 'hide' : 'show'}</h2>
                     </form>
                 </div> 
 
