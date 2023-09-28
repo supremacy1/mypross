@@ -21,6 +21,19 @@ flex: 1;
     position: relative;
     padding-left: 50%;
 }
+.cc{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 0.833px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    left: 90%;
+    top: -5%;
+}
+
 .banksubcontainer p {
     margin-top: 30%;
 

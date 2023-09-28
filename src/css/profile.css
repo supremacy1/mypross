@@ -126,6 +126,20 @@ text-align:center;
    
     
 }
+.nig{
+    width: 24px;
+height: 18px;
+flex-shrink: 0;
+}
+.elect{
+    border: 0px;
+    position: relative;
+    top: -5%;
+    width: 300px;
+    right: -10px;
+    background-color:#fbfcfd ;
+    color: #8692A6;
+}
 .registration-pro{
     flex: 1;
 flex-shrink: 0;

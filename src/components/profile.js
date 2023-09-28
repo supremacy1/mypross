@@ -5,8 +5,8 @@ import google from '../images/google.svg'
 import Vector1 from '../images/Vector1.svg'
 import arrowback1 from '../images/arrowback1.svg'
 import { Link } from 'react-router-dom';
-
-
+import nig from '../images/nig.svg'
+import cicle from '../images/cicle.svg'
 const Profile = () => {
     const [phone, setPhone] = useState();
     const [address, setAddress] = useState();
@@ -34,7 +34,7 @@ const handleCountryChange = (event) => {
 
 <p>“ <br></br>The passage experienced a surge in popularity<br></br>
     during the 1960s when Letraset used it on their<br></br> dry-transfer sheets, and again during the 90s
-    <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
+    <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi <img src={cicle} className="" alt="cd"></img></p>
     <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
                 <div className="profilecontainer2">
@@ -55,12 +55,12 @@ const handleCountryChange = (event) => {
 
                     <select className='select' value={selectedCountry} onChange={handleCountryChange}>
         <option value="">Select</option>
-        <option value="+1">United States (+1)</option>
-        <option value="+44">United Kingdom (+44)</option>
+        <option value="+1">Nigeria(+124)</option>
+        <option value="+44">UK (+44)</option>
         <option value="+91">India (+91)</option>
         {/* Add more country options as needed */}
         <input className='sell'
-        type="text"
+        type="number"
         placeholder="Enter phone numbers"
       />
       </select>
@@ -94,17 +94,27 @@ const handleCountryChange = (event) => {
                         Country of residence*
                     </label><br></br>
                     <input
+                    
                         type="text"
                         value={country}
-                        placeholder='Please Select'
+                        
                         onChange={e => setCountry(e.target.value)}
                         required
-                    /><br></br>
+                    />
+                    <select className='elect' value={selectedCountry} onChange={handleCountryChange}>
+        <option value="">Select Country</option>
+        <option >United States </option>
+        <option >Nigeria</option>
+        <option >India</option>
+        {/* Add more country options as needed */}
+        </select>
+                    <br></br>
                     <br></br>
                     <Link to='/bank'><button type='submit'>Save & Countinue</button><br></br></Link>
 
                 </form>
                 </div>
+               
                 </div>
            
         </>

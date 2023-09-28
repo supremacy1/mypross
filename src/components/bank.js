@@ -7,6 +7,8 @@ import Union from '../images/Union.svg'
 import lock from '../images/lock.svg'
 import Vector1 from '../images/Vector1.svg'
 import arrowback1 from '../images/arrowback1.svg'
+import cicle from '../images/cicle.svg'
+
 
 // import polygon from '../images/Polygon 1.svg'
 // import poly from '../images/Poly.svg'
@@ -33,7 +35,7 @@ const Bank = () => {
 
                     <p>“ <br></br>The passage experienced a surge in popularity<br></br>
                         during the 1960s when Letraset used it on their<br></br> dry-transfer sheets, and again during the 90s
-                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
+                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi <img src={cicle} className="" alt="cd"></img></p>
                     <img src={Vector1} className="bankvector1" alt="union"></img>
                 </div>
                 <div className="bankcontainer2">
@@ -56,8 +58,9 @@ const Bank = () => {
                             value={bank}
                             onChange={e => setBank(e.target.value)}
                             required
-                        /><br></br>
-                      
+                            />
+                        <br></br>
+                        <img src={cicle} className="cc" alt="cd"></img>
                       <br></br>
                         <button type='submit'>Save & Countinue</button><br></br><br></br>
                         <div className="last">

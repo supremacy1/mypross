@@ -8,6 +8,7 @@ import Union from '../images/Union.svg'
 import google from '../images/google.svg'
 import Vector1 from '../images/Vector1.svg'
 import arrowback1 from '../images/arrowback1.svg'
+import cicle from '../images/cicle.svg'
 
 // import polygon from '../images/Polygon 1.svg'
 // import poly from '../images/Poly.svg'
@@ -44,7 +45,7 @@ const Signup = () => {
 
                     <p>“ <br></br>The passage experienced a surge in popularity<br></br>
                         during the 1960s when Letraset used it on their<br></br> dry-transfer sheets, and again during the 90s
-                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
+                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi <img src={cicle} className="" alt="cd"></img></p>
                     <img src={Vector1} className="vect" alt="union"></img>
                 </div>
                 

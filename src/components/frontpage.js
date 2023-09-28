@@ -10,8 +10,11 @@ import polygon from '../images/Polygon 1.svg'
 import poly from '../images/Poly.svg'
 import user from '../images/user.png'
 import briefcase from '../images/briefcase.svg'
-
+import nig from '../images/nig.svg'
+import cicle from '../images/cicle.svg'
 const Frontpage = () => {
+    
+    
     // const [windowWidth, setWindowWidth] = useState(window.innerWidth);
       
     // useEffect(() => {
@@ -50,7 +53,7 @@ const Frontpage = () => {
                
                     <p>“ <br></br>The passage experienced a surge in popularity<br></br>
                         during the 1960s when Letraset used it on their<br></br> dry-transfer sheets, and again during the 90s
-                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi</p>
+                        <br></br>as desktop publishers bundled the text with their software.<br></br>Vincent Obi <img src={cicle} className="" alt="cd"></img></p>
                         <img src={Vector1} className="vector1" alt="union"></img>
                 </div>
                 <div className="fsubcontainer2">
@@ -72,8 +75,8 @@ const Frontpage = () => {
                         <h5> Own or belong to a company, this is for you. </h5>
                         </Link>
                     </div>
-            
-                </div>
+           
+                           </div>
 
             </div>
         </>
